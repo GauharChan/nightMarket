@@ -142,8 +142,8 @@ export default {
    },
   created() {
     let d = new Date();
-    let r = d.getDate()<10?'0'+d.getDate():d.getDate();
-    let m = parseInt(d.getMonth())+1<10?'0'+(parseInt(d.getMonth())+1):parseInt(d.getMonth())+1
+    let r = d.getDate() < 10 ? '0'+d.getDate() : d.getDate();
+    let m = (parseInt(d.getMonth()) + 1 )< 10 ? '0' + (parseInt(d.getMonth()) + 1) : (parseInt(d.getMonth()) + 1)
     let sum = 13 - r;
     this.today = d.getFullYear() + "-" + m + "-" + r;
     if (r >= 13) {
